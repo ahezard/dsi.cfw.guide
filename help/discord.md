@@ -5,10 +5,10 @@ sidebar:
   nav: "side"
 ---
 
-Please read our [FAQ](/help/faq) before asking for help on Discord.
+Merci de lire notre [FAQ](/help/faq) avant de demander de l'aide sur Discord.
 {: .notice--info}
 
-If you have any issues or problems regarding the guides on this site, please ask on Discord.
+Si vous avez un quelconque souci à propos du guide, veuillez poser vos questions sur Discord.
 
 ---
 
