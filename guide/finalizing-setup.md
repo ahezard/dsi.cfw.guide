@@ -1,36 +1,36 @@
 ---
-title: Finalizing Setup
+title: Fin de l'installation
 layout: single
 sidebar:
   nav: "side"
 ---
 
-We will now install SRLoader to the System Menu using TWLit, a program which can help us install `.tia` files to the new SD NAND.
+Nous allons maintenant installer SRLoader sur le menu DSi en utilisant TWLit, un logiciel aidant à l'installation de fichiers `.tia` sur le nouveau "SD NAND".
 
-SRLoader is a homebrew application that can run homebrew and retail ROMs, and has several emulators built in.
+SRLoader est un homebrew qui peut lancer d'autres homebrews et des ROMs commerciales, il a de plus de multiples émulateurs intégrés.
 
-## Downloads
+## Téléchargements
 
-- The latest release of [TWLit](/assets/files/TWLit.exe)
-- The latest release of [SRLoader](https://github.com/Robz8/SRLoader/releases){:target="_blank"}
+- La dernière version de [TWLit](/assets/files/TWLit.exe)
+- La dernière version de [SRLoader](https://github.com/Robz8/SRLoader/releases){:target="_blank"}
 
 ## Instructions
 
-1. Copy `SRLoader.tia` from the SRLoader `.7z` file to a location on your PC
-2. Insert your SD NAND (<2GB) SD card
-3. Copy the `_nds` and `roms` folders from the SRLoader `.7z` file to the root of your SD card
-4. Open TWLit
-    - If TWLit does not launch, install the [Microsoft Visual C++ 2010 Redistributable Package](https://www.microsoft.com/en-us/download/details.aspx?id=5555){:target="_blank"}
-5. Navigate to the **TIA Installer** tab
-6. Press "Browse" on the **Input TIA** entry box
-7. Navigate to the location of `SRLoader.tia`, select `SRLoader.tia`, and press **Open**
-8. Press "Browse" on the **Install Dir** entry box
-9. Navigate to your SD card, and press **Open**
-10. (Optional) Input your system's Console ID in the **DSi Console ID** entry box
-11. Press "Execute"
-12. Close TWLit, unplug your SD card, and insert it in your DSi
-13. Power on your system
-14. "Unwrap" the new gift box by tapping on it
-    - SRLoader should appear
+1. Copiez `SRLoader.tia` depuis l'archive `.7z` de SRLoader vers un dossier de votre PC
+2. Insérez votre carte SD (<2Go) dans votre PC
+3. Copiez les dossiers `_nds` et `roms` depuis l'archive `.7z` de SRLoader vers la racine de votre carte SD
+4. Ouvrez TWLit
+    - S'il ne se lance pas installez le [Microsoft Visual C++ 2010 Redistributable Package](https://www.microsoft.com/en-us/download/details.aspx?id=5555){:target="_blank"}
+5. Allez dans l'onglet **TIA Installer**
+6. Cliquez sur "Browse" dans le champ **Input TIA**
+7. Naviguez jusqu'au dossier contenant `SRLoader.tia` puis sélectionnez `SRLoader.tia` et enfin cliquez sur **Open**
+8. Cliquez sur "Browse" dans le champ **Install Dir**
+9. Allez à la racine de votre carte SD puis cliquez sur **Open**
+10. (Optionnel) Insérez votre Console ID dans le champ **DSi Console ID**
+11. Cliquez sur "Execute"
+12. Fermez TWLit, éjectez votre carte SD, et insérez-la dans votre DSi
+13. Allumez la console
+14. "Déballez" le nouveau cadeau en cliquant dessus
+    - SRLoader devrait apparaître
 
-SRLoader should now be on your System Menu, as any other DSiWare would be. With SRLoader, you can run homebrew and retail ROMs, and use the several emulators which are built into the software.
+SRLoader devrait maintenant être présent sur votre menu DSi, comme beaucoup d'autres DSiWare le seraient. Avec SRLoader, vous pouvez lancer des homebrews et ROMs commerciales ainsi qu'utiliser les nombreux émulateurs intégrés.
