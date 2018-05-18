@@ -1,100 +1,100 @@
 ---
-title: Installing HiyaCFW
+title: Installer HiyaCFW
 layout: single
 sidebar:
   nav: "side"
 ---
 
-If you have a non-USA console, you must have a DSiWare exploit previously installed to continue.
+Si vous avez une console non américaine vous devez avoir installé un exploit DSiWare antérieur pour pouvoir continuer.
 {: .notice--info}
 
-You will need [Unlaunch](/guide/installing-unlaunch/) installed before proceeding.
+Vous aurez besoin d'installer [Unlaunch](/guide/installing-unlaunch/) avant de continuer.
 {: .notice--info}
 
-Do not system update after installing HiyaCFW. This will remove HiyaCFW's SD patches.
+Ne faites pas de mise à jour système après l'installation de HiyaCFW, ceci retirerait les patchs mis en place.
 {: .notice--danger}
 
-HiyaCFW is a custom firmware for the Nintendo DSi that, once installed, will allow:
-- Booting the system from SD card
-- Installing homebrew applications to the Home Menu
-- Launching blocked flashcards on later versions
+HiyaCFW est un custom firmware pour DSi, une fois installé il permet de:
+- Démarrer le système depuis la carte SD
+- Installer des homebrews directement sur le menu DSi
+- Lancer les flashcarts bloquées sur les derniers firmwares
 
-## Requirements
-- The latest release of [Python 3](https://www.python.org/downloads/){:target="_blank"}
-  - You should already have this from previous section
-- An SD card that is 2GB or smaller, or a larger SD card that is partitioned to be 2GB or smaller
-- The latest release of [twlnf](https://github.com/Jimmy-Z/twlnf/releases){:target="_blank"}
-- The latest release of [HiyaCFW](https://github.com/Robz8/hiyaCFW/releases){:target="_blank"}
-- The latest release of [ugopwn](/assets/files/ugopwn.zip)
+## Pré-Requis
+- La dernière version de [Python 3](https://www.python.org/downloads/){:target="_blank"}
+  - Vous devriez déjà avoir ceci d'installé (voir Installer Unlaunch)
+- Une carte SD de 2Go ou moins, ou alors une carte SD de plus grosse taille mais partitionnée pour faire moins de 2Go
+- La dernière version de [twlnf](https://github.com/Jimmy-Z/twlnf/releases){:target="_blank"}
+- La dernière version de [HiyaCFW](https://github.com/Robz8/hiyaCFW/releases){:target="_blank"}
+- La dernière version de [ugopwn](/assets/files/ugopwn.zip)
 - [NUSDownloader](/assets/files/NUSDownloader.zip)
-- A NAND backup taken from your device, with the NO$GBA Footer
-  - twlnf will create this footer automatically when it makes a backup
-  - You should already have this backup from the previous section
-- [Helper scripts for HiyaCFW installation](/assets/files/hiyacfw_helper.zip)
+- Une sauvegarde du NAND de votre console, avec le pied de page de NO$GBA
+  - twlnf crée ce pied de page automatiquement quand une sauvegarde est faite
+  - Vous devriez déjà avoir cette sauvegarde (voir Installer Unlaunch)
+- [Scripts d'aide à l'installation de HiyaCFW](/assets/files/hiyacfw_helper.zip)
 
-## Preparation
-1. Insert your <2GB SD card into your PC
-2. Copy *the contents of* the NUSDownloader `.zip` file to a folder on your PC
-3. Copy *the contents of* the HiyaCFW `.7z` file to a folder on your PC
-4. Copy *the contents of* the HiyaCFW helper `.7z` to the `for PC` folder in your HiyaCFW folder
-5. Copy *the contents of* the ugopwn `.zip` file to the root of your <2GB SD card
-5. Copy *the contents of* the twlnf `.7z` file to the root of your <2GB SD card, and rename `twlnf.nds` to `boot.nds`
-6. Copy `console_id.txt` from the root of your normal SD card to the root of your <2GB SD card
-  - Of course, this only applies if your <2GB SD card is not your normal one
-7. Copy `nand.bin` and `nand.bin.sha` from the root of your normal SD card to the root of your <2GB SD card
-8. Open NUSDownloader on your computer
-  - This can be done through [Mono](http://www.mono-project.com/) on Mac/Linux/*nix systems
-9. Check the "Create Decrypted Contents (*.app)" box, and uncheck the "Keep Enc. Contents" box
-10. Select **Database > System (DSi) > System Menu (Launcher) > [Your Region] > v512 > Start NUS Download!**
-11. Exit NUS Downloader
-12. Navigate to **titles > 00030017484e41XX > 512** in your NUS Downloader directory
-13. Copy `00000002.app` from the `512` folder to the HiyaCFW `for PC` folder
-14. Copy your valid NAND backup (`nand.bin`) to the HiyaCFW `for PC` folder
+## Préparation
+1. Insérez votre carte SD dans votre PC
+2. Copiez  *le contenu* de l'archive `.zip` de NUSDownloader dans un dossier de votre PC
+3. Copiez  *le contenu* de l'archive `.zip` de HiyaCFW dans un dossier de votre PC
+4. Copiez  *le contenu* de l'archive `.zip` de l'aide à l'installation de HiyaCFW dans le dossier `for PC` du dossier de iyaCFW (étape 3)
+5. Copiez  *le contenu* de l'archive `.zip` de ugopwn à la racine de votre carte SD
+5. Copiez  *le contenu* de l'archive `.7z` de twlnf à la racine de votre carte SD puis renommez `twlnf.nds` en `boot.nds`
+6. Copiez `console_id.txt` à la racine de votre carte SD (depuis une éventuelle autre carte SD utilisée pour Unlaunch)
+  - Bien sûr ceci ne s'applique que si vous avez utilisé deux cartes différentes
+7. Copiez `nand.bin` et `nand.bin.sha` à la racine de votre carte SD (depuis une éventuelle autre carte SD utilisée pour Unlaunch)
+8. Ouvrez NUSDownloader sur votre PC
+  - Ceci peut être fait grâce à [Mono](http://www.mono-project.com/) sur les systèmes Mac/Linux/*nix
+9. Cochez "Create Decrypted Contents (*.app)", et décochez "Keep Enc. Contents"
+10. Sélectionnez **Database > System (DSi) > System Menu (Launcher) > [Votre Region] > v512 > Start NUS Download!**
+11. Quittez NUS Downloader
+12. Allez dans **titles > 00030017484e41XX > 512** à l'intérieur de votre dossier NUS Downloader
+13. Copiez `00000002.app` depuis le dossier `512` vers le dossier `for PC` de HiyaCFW
+14. Copiez votre sauvagarde valide du NAND (`nand.bin`) dans le dossier `for PC` de HiyaCFW
 
 ## Instructions
-1. Insert your <2GB SD card into your system
-2. Power on your DSi
-3. Open the Flipnote Studio application
-  - Ensure that the *booting to Calendar mode* is disabled in Flipnote Studio's settings
-  - If you already have another DSiWare exploit installed, open that and skip to Step 16
-4. Select **View Flipnote > SD Card > Select Folder > User > ugopwn**
-5. Click on the note with the red bottom half
-6. Select "Edit"
-7. Click on the Flipnote frog icon in the bottom left
-8. Click on the film roll icon
-9. Select **Copy > Back > Exit**
-10. Click the second note.
-11. Click on the Flipnote frog icon in the bottom left
-12. Click on the film roll icon.
-13. Click on the single right arrow (the next to last arrow icon) two times
-  - You will see a new frame be created
-14. Click on the paste button exactly 122 times.
-15. Select "Erase" and then "Paste"
-  - This should launch twlnf
-16. Press **X** to mount the system NAND directly
-17. Press **START** to open twlnf's menu
-18. Press **R** to dump the NAND contents to your SD card
-  - This will take several minutes
-  - Keep your system plugged in during this process, to avoid sudden power loss
-  - When `walk returned 0` appears, the process is complete
-19. Once finished, press **Select** to quit twlnf
-20. Press **A** to confirm
-  - Your console will power off
-21. Insert your <2GB SD card into your PC
-22. Move all files from the `dump` directory to the root of the SD card
-  - This prepares the "SD NAND",  which HiyaCFW will boot from
-23. Navigate to the HiyaCFW `for PC` folder
-24. Run `hiyacfw_helper.py` to prepare modifications
-  - This script requires [WINE](https://www.winehq.org/){:target="_blank"} on Mac/Linux/*nix systems
-25. Open the new `Modified Files` folder
-26. Copy `bootloader.nds` to the root of your <2GB SD card
-27. Copy 00000002.app to **title > 00030017 > 484e41XX > content** folder on your <2GB SD card
-28. Copy *the contents of* the HiyaCFW `for 2GB (or lower) SD card (SDNAND)` folder to the root of your <2GB SD card
-29. Unplug your <2GB SD card, and insert it in your DSi
-30. Power on your console
-  - HiyaCFW's splash screen should appear
+1. Insérez votre carte SD dans votre console
+2. Allumez votre DSi
+3. Ouvrez Flipnote Studio
+  - Assurez-vous que l'option *Calendrier au démarrage* est désactivée dans les options de Flipnote Studio
+  - Si vous avez un autre exploit DSiWare installé alors ouvrez celui-ci et passez à l'étape 16
+4. Sélectionnez **Voir une Flipnote > Carte SD > Choisir un dossier > User > ugopwn**
+5. Cliquez sur la flipnote avec la moitié basse en rouge
+6. Choisissez "Modifier"
+7. Cliquez sur l'icone de grenouille dans le coin inférieur gauche
+8. Cliquez sur l'icone de péliculle
+9. Sélectionnez **Copier > Retour > Quitter**
+10. Cliqez sur la seconde flipnote.
+11. Cliquez sur l'icone de grenouille dans le coin inférieur gauche
+12. Cliquez sur l'icone de péliculle
+13. Cliquez sur l'icone de flèche vers la droite deux fois
+  - Vous verrez une nouvelle page se créer
+14. Cliquez sur le bouton Coller éxactement 122 fois.
+15. Sélectionnez "Effacer" puis "Coller"
+  - Ceci devrait lancer twlnf
+16. Pressez **X** pour monter directement le NAND du système
+17. Pressez **START** pour ouvrir le menu de twlnf
+18. Pressez **R** pour effectuer une copie du NAND sur votre carte SD
+  - Ceci peut prendre quelques minutes
+  - Branchez votre système pendant cette étape afin d'éviter un quelconque problème d'alimentation
+  - Quand `walk returned 0` apparaît, le processus est terminé
+19. Une fois fini, pressez **Select** pour quitter twlnf
+20. Pressez **A** pour confirmer
+  - Votre console s'éteindra
+21. Insérez votre carte SD dans votre PC
+22. Déplacez tous les fichiers du dossier `dump` à la racine de votre carte SD
+  - Ceci prépare le "SD NAND",  utilisé pour le démarrage de HiyaCFW
+23. Allez dans le dossier `for PC` de HiyaCFW sur votre PC
+24. Lancez `hiyacfw_helper.py` pour préparer les modifications
+  - Ce script nécessite [WINE](https://www.winehq.org/){:target="_blank"} sur les systèmes Mac/Linux/*nix
+25. Ouvrez le nouveau dossier `Modified Files`
+26. Copiez `bootloader.nds` à la racine de votre carte SD
+27. Copiez 00000002.app dans le dossier **title > 00030017 > 484e41XX > content** de votre carte SD
+28. Copiez *le contenu* du dossier`for 2GB (or lower) SD card (SDNAND)` de HiyaCFW à la racine de votre carte SD
+29. Ejectez votre carte SD et insérez-la dans votre console
+30. Allumez votre DSi
+  -L'écran de démarrage de HiyaCFW devrait aparaître
 
-Your system should now boot from the SD card instead of the internal NAND.
+Votre système devrait maintenant démarrer depuis la carte SD au lieu du NAND.
 
-[Finalizing Setup](/guide/finalizing-setup){: .btn .btn--light-outline}
+[Fin de l'installation](/guide/finalizing-setup){: .btn .btn--light-outline}
 {: style="text-align: center;"}
