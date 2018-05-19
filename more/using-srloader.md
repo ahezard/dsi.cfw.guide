@@ -1,33 +1,33 @@
 ---
-title: Using SRLoader
+title: Utilisation de SRLoader
 layout: single
 sidebar:
   nav: "side"
 ---
 
-nds-bootstrap is currently a proof-of-concept, and is far from complete. Expect long loading times and compatibility issues. It is highly recommended that you check and bookmark the [compatibility chart](https://docs.google.com/spreadsheets/d/1M7MxYQzVhb4604esdvo57a7crSvbGzFIdotLW0bm0Co/edit#gid=0){:target="_blank"}.
+nds-bootstrap est actuellement un prototype, et est loin d'être complet. Attendez-vous à des temps de chargement longs et à des problèmes de compatibilité. Il est hautement recommandé de verifier et ajouter a vos favoris la [compatibility chart](https://docs.google.com/spreadsheets/d/1M7MxYQzVhb4604esdvo57a7crSvbGzFIdotLW0bm0Co/edit#gid=0){:target="_blank"}.
 {: .notice--info}
 
-SRLoader is a homebrew application that will allow you to run homebrew applications, as well as commercial ROMs using [nds-bootstrap](https://github.com/ahezard/nds-bootstrap){:target="_blank"}. SRLoader also has various emulators built in, as well as a GBA runner, which will let you run Gameboy Color, NES and GBA ROMs.
+SRLoader est un homebrew qui vous permez de lancer des homebrews, ainsi que des ROMs commerciale en utilisant [nds-bootstrap](https://github.com/ahezard/nds-bootstrap){:target="_blank"}. SRLoader a egalement divers emulateurs intégrés, ainsi qu'un lanceur GBA, qui vous permettent de lancer des ROMs Gameboy Color, NES and GBA.
 
-You can learn more about SRLoader [here](https://gbatemp.net/threads/srloader-gui-for-flashcards-also-a-nds-app-for-dsi.472200/){:target="_blank"}.
+Vous pouvez en apprendre davantage [here](https://gbatemp.net/threads/srloader-gui-for-flashcards-also-a-nds-app-for-dsi.472200/){:target="_blank"}.
 
-## Downloads
+## Téléchargements
 
-- The latest release of [SRLoader](https://github.com/Robz8/SRLoader/releases)
+- La dernière version de [SRLoader](https://github.com/Robz8/SRLoader/releases)
 
 ## Installation
-1. Insert your system's SD card into your computer
-2. Copy the contents of the twlnf `.7z` file to the root of your SD card
-  - If prompted to replace boot.nds, say yes
-3. Copy ROMs to their respective folders
-  - Place Gameboy roms in `/roms/gb`
-  - Place NDS roms in `/roms/nds`
-  - Place NES roms in `/roms/nes`
-  - For GBA, make a folder in `roms` named `gba` and place roms there
-  - GBA requires a copy of the GBA BIOS named `bios.bin` on the root of your SD card, and currently has no saving support
+1. Insérer la carte SD de votre DSi dans votre ordinateur
+2. Copiez le contenu du ficher `.7z` twlnf à la racine de votre carte SD
+  - Si il vous est demandé de remplacer boot.nds, répondez oui
+3. Copiez les ROMS dans leur dossiers respectifs
+  - Mettez les roms Gameboy dands `/roms/gb`
+  - Mettez les roms NDS dans `/roms/nds`
+  - Mettez les roms NES dans in `/roms/nes`
+  - Pour la GBA, créez un dossier `gba` dans le dossier `roms` et mettez les roms dedans
+  - Le lanceur GBA demande une copie du BIOS GBA nommée `bios.bin` a la racine de votre carte SD,  et ne supporte la sauvegarde actuellement
 
-## Usage
+## Utilisation
 1. Launch SRLoader using your homebrew entrypoint of choice
 2. You will now see a list of your NDS ROMs
   - Press **Y** to launch homebrew applications without nds-bootstrap
